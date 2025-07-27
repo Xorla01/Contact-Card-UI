@@ -1,0 +1,146 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(34, 24, 46);
+    color: #7e7474;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card {
+    max-width: 350px;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(27, 17, 39);
+    padding-top: 30px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 4px rgb(14, 12, 15);
+    position: relative;
+}
+.profile-ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: auto;
+    border: 2px solid lightseagreen;
+
+}
+.profile-picture {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-bottom: 7px;
+    letter-spacing: 0.3px;
+}
+
+p, h3 {
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 0px;
+}
+.bio {
+    font-size: 15px;
+    padding: 0px 40px;
+    font-weight: 400;
+}
+input {
+    font-size: 14px;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    background-color: rgb(27, 17, 39);
+    color: lightseagreen;
+    border-color: lightseagreen;
+    border-width: 1.5px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+input:hover {
+    background-color: lightseagreen;
+    color: black;
+}
+
+.skills {
+    font-size: 14px;
+    background-color: rgb(23, 14, 34);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: start;
+    padding: 20px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.skill-list li {
+    border: 1px solid #3f3b3b;
+    color: #3f3b3b;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color, color 0.15s;
+    cursor: pointer;
+}
+.skill-list li:hover {
+    background-color: #7e7474;
+    color: #080808;
+}
+
+.skills h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.level {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.level h4 {
+    font-family: verdana;
+    font-size: 14px;
+    background-color: goldenrod;
+    color: #3a362a;
+    padding: 2px 5px;
+    border-radius: 3px;
+    letter-spacing: -1px;
+}
+
+@media (max-width:480px) {
+    .card {padding-top: 20px;
+    box-shadow: none;}
+
+    .profile-ring{
+        width: 90px;
+        height: 90px;
+    }
+
+    .skills {
+        padding: 15px;
+    }
+
+    .skill-list li {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
